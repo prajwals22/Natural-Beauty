@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty Store - Naturali</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/home_spa.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+   <!-- ===============================================================
+     COMPLETE UPDATED NAVBAR
+     Replace your existing <nav> block with this in ALL pages
+     =============================================================== -->
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo/images.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+
+        <li><a href="best_sellers.html">Best Sellers</a></li>
+
+        <!-- 1. New Launches -->
+        <li class="has-dropdown">
+            <a href="new_launches.html" class="drop-toggle">
+                New Launches <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Anti-Frizz Range</a></li>
+                <li><a href="#">Conditioner</a></li>
+                <li><a href="#">Curl Range</a></li>
+                <li><a href="#">Men's Range</a></li>
+                <li><a href="#">Body Scrub</a></li>
+                <li><a href="#">Face Scrub</a></li>
+            </ul>
+        </li>
+
+        <!-- 2. Hair Care -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Hair Care <i class="fas fa-chevron-down drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Shampoo</a></li>
+                <li><a href="#">Conditioner</a></li>
+                <li><a href="#">Hair Mask</a></li>
+                <li><a href="#">Scalp Serum</a></li>
+                <li><a href="#">Hair Oil</a></li>
+            </ul>
+        </li>
+
+        <!-- 3. Skin Care -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Skin Care <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Face Wash</a></li>
+                <li><a href="#">Face Serum</a></li>
+                <li><a href="#">Face Scrub</a></li>
+                <li><a href="#">Moisturiser</a></li>
+                <li><a href="#">Body Scrub</a></li>
+                <li><a href="#">Body Lotion</a></li>
+                <li><a href="#">Sunscreen</a></li>
+                <li><a href="#">Body Wash</a></li>
+            </ul>
+        </li>
+
+        <!-- 4. Ingredients -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Ingredients <i class="fas fa-chevron-down drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Red Onion</a></li>
+                <li><a href="#">Rosemary</a></li>
+                <li><a href="#">Hemp</a></li>
+                <li><a href="#">Tea Tree Oil</a></li>
+                <li><a href="#">Avocado</a></li>
+                <li><a href="#">Rice Water</a></li>
+                <li><a href="#">Cactus</a></li>
+                <li><a href="#">Biotin</a></li>
+                <li><a href="#">Earth Marine Water</a></li>
+                <li><a href="#">Kakadu Plum</a></li>
+                <li><a href="#">Niacinamide</a></li>
+                <li><a href="#">Sage</a></li>
+                <li><a href="#">Salicylic Acid</a></li>
+            </ul>
+        </li>
+
+        <!-- 5. Combos -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Combos <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Combos with Wooden Comb</a></li>
+                <li><a href="#">Combos with Scalp Massager</a></li>
+                <li><a href="#">Scrunchies</a></li>
+                <li><a href="#">Routine Combos</a></li>
+                <li><a href="#">Family Pack Combos</a></li>
+                <li><a href="#">All Combos</a></li>
+            </ul>
+        </li>
+
+        <!-- 6. Shop By Concern — has nested sub-menu arrows -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Shop By Concern <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li class="has-submenu">
+                    <a href="#">Hair Care <i class="fas fa-chevron-right sub-arrow"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Hairfall Control</a></li>
+                        <li><a href="#">Anti-Dandruff</a></li>
+                        <li><a href="#">Anti-Frizz</a></li>
+                        <li><a href="#">Curl Care</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">Skin Care <i class="fas fa-chevron-right sub-arrow"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Acne Care</a></li>
+                        <li><a href="#">Brightening</a></li>
+                        <li><a href="#">Hydration</a></li>
+                        <li><a href="#">Anti-Aging</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Body Care</a></li>
+                <li><a href="#">Face Care</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="icons">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+
+    <!-- ================= SLIDER ================= -->
+    <section class="hs-slider">
+        <div class="hs-slides">
+            <img src="https://picsum.photos/id/1018/1600/600" class="hs-slide hs-active" alt="Slide 1">
+            <img src="https://picsum.photos/id/1015/1600/600" class="hs-slide" alt="Slide 2">
+            <img src="https://picsum.photos/id/1019/1600/600" class="hs-slide" alt="Slide 3">
+        </div>
+    </section>
+
+    <!-- ================= PRODUCT SECTION ================= -->
+    <section class="hs-product-section">
+        <div class="hs-product-section-header">
+            <button class="hs-filter-dropdown">
+                Featured <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+
+        <div class="hs-product-grid" id="hsProductGrid">
+
+            <!-- Product 1 -->
+            <div class="hs-product-card">
+                <div class="hs-product-img-wrap">
+                    <img src="images/home page/1.jpg" alt="Anti-Dandruff Conditioner">
+                    <div class="hs-sale-badge">
+                        <span class="hs-holi">HOLI</span>
+                        <span class="hs-sale-text">SALE</span>
+                    </div>
+                </div>
+                <div class="hs-product-info">
+                    <p class="hs-product-name">Naturali Anti-Dandruff Conditioner with Hemp, Sage &amp; Salicylic Acid</p>
+                    <div class="hs-product-rating">
+                        <div class="hs-stars-row">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="hs-review-count">138 reviews</span>
+                    </div>
+                    <div class="hs-product-price">
+                        <span class="hs-price-label">MRP:</span>
+                        <span class="hs-current-price">&#8377; 233</span>
+                        <span class="hs-original-price">&#8377;359</span>
+                        <span class="hs-discount-badge">35% OFF</span>
+                    </div>
+                    <div class="hs-volume-select-wrap">
+                        <select class="hs-volume-select">
+                            <option>180 ML</option>
+                            <option>360 ML</option>
+                        </select>
+                    </div>
+                    <div class="hs-cart-row">
+                        <div class="hs-qty-control">
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, -1)">&#8722;</button>
+                            <span class="hs-qty-value">1</span>
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, 1)">+</button>
+                        </div>
+                        <button class="hs-add-to-cart-btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="hs-product-card">
+                <div class="hs-product-img-wrap">
+                    <img src="images/home page/2.jpg" alt="Anti-Frizz Shampoo">
+                    <div class="hs-sale-badge">
+                        <span class="hs-holi">HOLI</span>
+                        <span class="hs-sale-text">SALE</span>
+                    </div>
+                </div>
+                <div class="hs-product-info">
+                    <p class="hs-product-name">Naturali Anti-Frizz Shampoo with Argan Oil, Quinoa &amp; Hyaluronic Acid</p>
+                    <div class="hs-product-rating">
+                        <div class="hs-stars-row">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="hs-review-count">48 reviews</span>
+                    </div>
+                    <div class="hs-product-price">
+                        <span class="hs-price-label">MRP:</span>
+                        <span class="hs-current-price">&#8377; 346</span>
+                        <span class="hs-original-price">&#8377;533</span>
+                        <span class="hs-discount-badge">35% OFF</span>
+                    </div>
+                    <div class="hs-volume-select-wrap">
+                        <select class="hs-volume-select">
+                            <option>370ML</option>
+                            <option>180ML</option>
+                        </select>
+                    </div>
+                    <div class="hs-cart-row">
+                        <div class="hs-qty-control">
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, -1)">&#8722;</button>
+                            <span class="hs-qty-value">1</span>
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, 1)">+</button>
+                        </div>
+                        <button class="hs-add-to-cart-btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="hs-product-card">
+                <div class="hs-product-img-wrap">
+                    <img src="images/home page/3.png" alt="Anti-Frizz Conditioner">
+                    <div class="hs-sale-badge">
+                        <span class="hs-holi">HOLI</span>
+                        <span class="hs-sale-text">SALE</span>
+                    </div>
+                </div>
+                <div class="hs-product-info">
+                    <p class="hs-product-name">Naturali Anti-Frizz Conditioner with Argan Oil, Quinoa, and Hyaluronic Acid</p>
+                    <div class="hs-product-rating">
+                        <div class="hs-stars-row">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="hs-review-count">9 reviews</span>
+                    </div>
+                    <div class="hs-product-price">
+                        <span class="hs-price-label">MRP:</span>
+                        <span class="hs-current-price">&#8377; 233</span>
+                        <span class="hs-original-price">&#8377;359</span>
+                        <span class="hs-discount-badge">35% OFF</span>
+                    </div>
+                    <div class="hs-volume-select-wrap">
+                        <select class="hs-volume-select">
+                            <option>180ML</option>
+                            <option>360ML</option>
+                        </select>
+                    </div>
+                    <div class="hs-cart-row">
+                        <div class="hs-qty-control">
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, -1)">&#8722;</button>
+                            <span class="hs-qty-value">1</span>
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, 1)">+</button>
+                        </div>
+                        <button class="hs-add-to-cart-btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="hs-product-card">
+                <div class="hs-product-img-wrap">
+                    <img src="images/home page/4.png" alt="Hairfall Control Shampoo">
+                    <div class="hs-sale-badge">
+                        <span class="hs-holi">HOLI</span>
+                        <span class="hs-sale-text">SALE</span>
+                    </div>
+                </div>
+                <div class="hs-product-info">
+                    <p class="hs-product-name">Naturali Hairfall Control Shampoo with Onion, Bhringraj &amp; Biotin</p>
+                    <div class="hs-product-rating">
+                        <div class="hs-stars-row">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="hs-review-count">204 reviews</span>
+                    </div>
+                    <div class="hs-product-price">
+                        <span class="hs-price-label">MRP:</span>
+                        <span class="hs-current-price">&#8377; 279</span>
+                        <span class="hs-original-price">&#8377;429</span>
+                        <span class="hs-discount-badge">35% OFF</span>
+                    </div>
+                    <div class="hs-volume-select-wrap">
+                        <select class="hs-volume-select">
+                            <option>370ML</option>
+                            <option>180ML</option>
+                        </select>
+                    </div>
+                    <div class="hs-cart-row">
+                        <div class="hs-qty-control">
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, -1)">&#8722;</button>
+                            <span class="hs-qty-value">1</span>
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, 1)">+</button>
+                        </div>
+                        <button class="hs-add-to-cart-btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="hs-product-card">
+                <div class="hs-product-img-wrap">
+                    <img src="images/home page/1.jpg" alt="Scalp Serum">
+                    <div class="hs-sale-badge">
+                        <span class="hs-holi">HOLI</span>
+                        <span class="hs-sale-text">SALE</span>
+                    </div>
+                </div>
+                <div class="hs-product-info">
+                    <p class="hs-product-name">Naturali Scalp Nourishing Serum with Redensyl &amp; Pea Peptide</p>
+                    <div class="hs-product-rating">
+                        <div class="hs-stars-row">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="hs-review-count">57 reviews</span>
+                    </div>
+                    <div class="hs-product-price">
+                        <span class="hs-price-label">MRP:</span>
+                        <span class="hs-current-price">&#8377; 519</span>
+                        <span class="hs-original-price">&#8377;799</span>
+                        <span class="hs-discount-badge">35% OFF</span>
+                    </div>
+                    <div class="hs-volume-select-wrap">
+                        <select class="hs-volume-select">
+                            <option>50ML</option>
+                            <option>100ML</option>
+                        </select>
+                    </div>
+                    <div class="hs-cart-row">
+                        <div class="hs-qty-control">
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, -1)">&#8722;</button>
+                            <span class="hs-qty-value">1</span>
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, 1)">+</button>
+                        </div>
+                        <button class="hs-add-to-cart-btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="hs-product-card">
+                <div class="hs-product-img-wrap">
+                    <img src="images/home page/2.jpg" alt="Men's Shampoo">
+                    <div class="hs-sale-badge">
+                        <span class="hs-holi">HOLI</span>
+                        <span class="hs-sale-text">SALE</span>
+                    </div>
+                </div>
+                <div class="hs-product-info">
+                    <p class="hs-product-name">Naturali Men's Hairfall Control Shampoo with Saw Palmetto &amp; Caffeine</p>
+                    <div class="hs-product-rating">
+                        <div class="hs-stars-row">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="hs-review-count">91 reviews</span>
+                    </div>
+                    <div class="hs-product-price">
+                        <span class="hs-price-label">MRP:</span>
+                        <span class="hs-current-price">&#8377; 279</span>
+                        <span class="hs-original-price">&#8377;429</span>
+                        <span class="hs-discount-badge">35% OFF</span>
+                    </div>
+                    <div class="hs-volume-select-wrap">
+                        <select class="hs-volume-select">
+                            <option>370ML</option>
+                            <option>180ML</option>
+                        </select>
+                    </div>
+                    <div class="hs-cart-row">
+                        <div class="hs-qty-control">
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, -1)">&#8722;</button>
+                            <span class="hs-qty-value">1</span>
+                            <button class="hs-qty-btn" onclick="hsChangeQty(this, 1)">+</button>
+                        </div>
+                        <button class="hs-add-to-cart-btn">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIAL SECTION ================= -->
+    <section class="hs-testimonials">
+        <h2 class="hs-testimonial-title">Awesome Outcomes</h2>
+        <div class="hs-testimonial-container">
+            <div class="hs-testimonial-card hs-active">
+                <div class="hs-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <h3>Men's Hairfall Control</h3>
+                <p class="hs-testimonial-text">
+                    "The Naturali Men's Shampoo is a good shampoo,
+                    good for oily hair and normal. Can be used daily.
+                    So far my hair fall has reduced after using 2 bottles,
+                    almost 4 months."
+                </p>
+                <p class="hs-testimonial-author">Sumeer Shah</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PREMIUM FOOTER ================= -->
+    <footer class="hs-premium-footer">
+        <div class="hs-footer-top">
+            <div class="hs-footer-left">
+                <h2 class="hs-footer-logo">Naturali</h2>
+                <hr class="hs-footer-line">
+                <div class="hs-footer-links">
+                    <div class="hs-footer-column">
+                        <h4>SHOP</h4>
+                        <a href="#">Best Sellers</a>
+                        <a href="#">New Launches</a>
+                        <a href="#">Hair Care</a>
+                        <a href="#">Skin Care</a>
+                        <a href="#">Ingredients</a>
+                        <a href="#">Combos</a>
+                        <a href="#">Shop By Concern</a>
+                    </div>
+                    <div class="hs-footer-column">
+                        <h4>BRAND</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Refund policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="hs-footer-column">
+                        <h4>LEGAL</h4>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Return &amp; Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-footer-right">
+                <div class="hs-footer-badge">
+                    <div class="hs-badge-circle"><span>N</span></div>
+                </div>
+                <h3 class="hs-newsletter-title">
+                    Elevate Your Self-Care Routine<br>
+                    With Natural Solutions.
+                </h3>
+                <div class="hs-newsletter">
+                    <input type="email" placeholder="YOUR EMAIL">
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hs-footer-bottom">
+            <div class="hs-social-section">
+                <h4>SOCIAL</h4>
+                <div class="hs-social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="hs-copyright">
+                COPYRIGHT &copy; 2026 NATURALI | ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= SCROLL TO TOP ================= -->
+    <button id="hsScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/home_spa.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

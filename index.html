@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Beauty Store - Naturali</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/home.css">
+         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+
+<!-- ===============================================================
+     COMPLETE UPDATED NAVBAR
+     Replace your existing <nav> block with this in ALL pages
+     =============================================================== -->
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo/images.png" alt="Logo">
+        </a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+
+        <li><a href="best_sellers.html">Best Sellers</a></li>
+
+        <!-- 1. New Launches -->
+        <li class="has-dropdown">
+            <a href="new_launches.html" class="drop-toggle">
+                New Launches <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Anti-Frizz Range</a></li>
+                <li><a href="#">Conditioner</a></li>
+                <li><a href="#">Curl Range</a></li>
+                <li><a href="#">Men's Range</a></li>
+                <li><a href="#">Body Scrub</a></li>
+                <li><a href="#">Face Scrub</a></li>
+            </ul>
+        </li>
+
+        <!-- 2. Hair Care -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Hair Care <i class="fas fa-chevron-down drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Shampoo</a></li>
+                <li><a href="#">Conditioner</a></li>
+                <li><a href="#">Hair Mask</a></li>
+                <li><a href="#">Scalp Serum</a></li>
+                <li><a href="#">Hair Oil</a></li>
+            </ul>
+        </li>
+
+        <!-- 3. Skin Care -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Skin Care <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Face Wash</a></li>
+                <li><a href="#">Face Serum</a></li>
+                <li><a href="#">Face Scrub</a></li>
+                <li><a href="#">Moisturiser</a></li>
+                <li><a href="#">Body Scrub</a></li>
+                <li><a href="#">Body Lotion</a></li>
+                <li><a href="#">Sunscreen</a></li>
+                <li><a href="#">Body Wash</a></li>
+            </ul>
+        </li>
+
+        <!-- 4. Ingredients -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Ingredients <i class="fas fa-chevron-down drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Red Onion</a></li>
+                <li><a href="#">Rosemary</a></li>
+                <li><a href="#">Hemp</a></li>
+                <li><a href="#">Tea Tree Oil</a></li>
+                <li><a href="#">Avocado</a></li>
+                <li><a href="#">Rice Water</a></li>
+                <li><a href="#">Cactus</a></li>
+                <li><a href="#">Biotin</a></li>
+                <li><a href="#">Earth Marine Water</a></li>
+                <li><a href="#">Kakadu Plum</a></li>
+                <li><a href="#">Niacinamide</a></li>
+                <li><a href="#">Sage</a></li>
+                <li><a href="#">Salicylic Acid</a></li>
+            </ul>
+        </li>
+
+        <!-- 5. Combos -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Combos <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li><a href="#">Combos with Wooden Comb</a></li>
+                <li><a href="#">Combos with Scalp Massager</a></li>
+                <li><a href="#">Scrunchies</a></li>
+                <li><a href="#">Routine Combos</a></li>
+                <li><a href="#">Family Pack Combos</a></li>
+                <li><a href="#">All Combos</a></li>
+            </ul>
+        </li>
+
+        <!-- 6. Shop By Concern — has nested sub-menu arrows -->
+        <li class="has-dropdown">
+            <a href="#" class="drop-toggle">
+                Shop By Concern <i class="fas fa-chevron-up drop-arrow"></i>
+            </a>
+            <ul class="drop-menu">
+                <li class="has-submenu">
+                    <a href="#">Hair Care <i class="fas fa-chevron-right sub-arrow"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Hairfall Control</a></li>
+                        <li><a href="#">Anti-Dandruff</a></li>
+                        <li><a href="#">Anti-Frizz</a></li>
+                        <li><a href="#">Curl Care</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="#">Skin Care <i class="fas fa-chevron-right sub-arrow"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Acne Care</a></li>
+                        <li><a href="#">Brightening</a></li>
+                        <li><a href="#">Hydration</a></li>
+                        <li><a href="#">Anti-Aging</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Body Care</a></li>
+                <li><a href="#">Face Care</a></li>
+            </ul>
+        </li>
+
+    </ul>
+
+    <div class="nav-right">
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="icons">
+            <i class="fas fa-user"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+        <!-- ================= SLIDER ================= -->
+        <section class="slider">
+            <div class="slides">
+                <img src="https://picsum.photos/id/1018/1600/600"
+                    class="slide active" alt="Slide 1">
+                <img src="https://picsum.photos/id/1015/1600/600" class="slide"
+                    alt="Slide 2">
+                <img src="https://picsum.photos/id/1019/1600/600" class="slide"
+                    alt="Slide 3">
+            </div>
+        </section>
+
+        <!-- ================= PRODUCT SECTION ================= -->
+        <section class="products">
+            <h2 class="section-title">
+                <span class="highlight-hair">Hair</span> Skin Body
+            </h2>
+
+            <div class="product-container">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="badge">BEST SELLER</span>
+                        <img src="images/home page/1.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Naturali Anti-Hairfall Shampoo with Rosemary, Korean
+                            Ginseng &amp; Biotin</h3>
+                        <div class="rating">⭐⭐⭐⭐☆ 4.6 | 338 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 346</strong>
+                            <span class="old-price">₹ 533</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="badge">BEST SELLER</span>
+                        <img src="images/home page/2.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Naturali Anti-Dandruff Shampoo with Hemp, Sage &amp;
+                            Salicylic Acid</h3>
+                        <div class="rating">⭐⭐⭐⭐☆ 4.6 | 338 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 346</strong>
+                            <span class="old-price">₹ 533</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="badge">BEST SELLER</span>
+                        <img src="images/home page/3.png" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Naturali Hair Fall Arrest Shampoo with Onion and
+                            Bhringraj</h3>
+                        <div class="rating">⭐⭐⭐⭐☆ 4.6 | 338 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 318</strong>
+                            <span class="old-price">₹ 533</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="badge">BEST SELLER</span>
+                        <img src="images/home page/4.png" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Naturali Dandruff Defence Shampoo with Cactus and
+                            Tea Tree Oil</h3>
+                        <div class="rating">⭐⭐⭐⭐☆ 4.6 | 338 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 318</strong>
+                            <span class="old-price">₹ 533</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= NEW LAUNCHES SECTION ================= -->
+        <section class="new-launches">
+            <div class="launch-header">
+                <h2 class="launch-title">New Launches</h2>
+                <a href="new_launches.html" class="view-all-btn">VIEW ALL</a>
+            </div>
+
+            <div class="launch-container">
+
+                <div class="launch-card">
+                    <div class="launch-image">
+                        <img src="images/home page/1.jpg" alt="Launch 1">
+                    </div>
+                    <div class="launch-info">
+                        <h3>Naturali Anti-Dandruff Conditioner with Hemp, Sage
+                            &amp; Salicylic Acid</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ 4.8 | 138 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 233</strong>
+                            <span class="old-price">₹ 359</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn-dark">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="launch-card">
+                    <div class="launch-image">
+                        <img src="images/home page/2.jpg" alt="Launch 2">
+                    </div>
+                    <div class="launch-info">
+                        <h3>Naturali Anti-Frizz Shampoo with Argan Oil, Quinoa
+                            &amp; Hyaluronic Acid</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ 4.8 | 48 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 346</strong>
+                            <span class="old-price">₹ 533</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn-dark">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="launch-card">
+                    <div class="launch-image">
+                        <img src="images/home page/3.png" alt="Launch 3">
+                    </div>
+                    <div class="launch-info">
+                        <h3>Naturali Anti-Frizz Conditioner with Argan Oil,
+                            Quinoa &amp; Hyaluronic Acid</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ 4.7 | 9 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 233</strong>
+                            <span class="old-price">₹ 359</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn-dark">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="launch-card">
+                    <div class="launch-image">
+                        <img src="images/home page/4.png" alt="Launch 4">
+                    </div>
+                    <div class="launch-info">
+                        <h3>Naturali Anti-Frizz Hair Mask with Argan Oil, Quinoa
+                            &amp; Hyaluronic Acid</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ 4.7 | 51 reviews</div>
+                        <div class="price">
+                            MRP: <strong>₹ 454</strong>
+                            <span class="old-price">₹ 699</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <div class="cart-section">
+                            <div class="quantity">
+                                <button onclick="changeQty(this,-1)">-</button>
+                                <span>1</span>
+                                <button onclick="changeQty(this,1)">+</button>
+                            </div>
+                            <button class="add-btn-dark">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= HOME SPA SECTION ================= -->
+        <section class="home-spa">
+            <div class="spa-header">
+                <div class="spa-title-wrap">
+                    <h2 class="spa-title">Home Spa</h2>
+                    <span class="spa-underline"></span>
+                </div>
+                <a href="home_spa.html" class="spa-view-all-btn">VIEW ALL</a>
+            </div>
+
+            <div class="spa-grid">
+
+                <!-- Spa Card 1 -->
+                <div class="spa-card">
+                    <div class="spa-img-wrap">
+                        <img src="images/home page/1.jpg"
+                            alt="Anti-Dandruff Hair Mask">
+                        <div class="spa-sale-badge">
+                            <span class="spa-holi">HOLI</span>
+                            <span class="spa-sale-text">SALE</span>
+                        </div>
+                    </div>
+                    <div class="spa-card-info">
+                        <p class="spa-product-name">Naturali Anti-Dandruff Hair
+                            Mask With Hemp, Sage &amp; Salicylic Acid</p>
+                        <div class="spa-rating">
+                            <div class="spa-stars">
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="spa-rating-text">4.86 | 120
+                                reviews</span>
+                        </div>
+                        <div class="spa-price-row">
+                            <span class="spa-price-label">MRP:</span>
+                            <span class="spa-current-price">&#8377; 438</span>
+                            <span class="spa-old-price">&#8377;675</span>
+                            <span class="spa-discount-badge">35% OFF</span>
+                        </div>
+                        <div class="spa-volume-wrap">
+                            <select class="spa-volume-select">
+                                <option>200ML</option>
+                                <option>400ML</option>
+                            </select>
+                        </div>
+                        <div class="spa-cart-row">
+                            <div class="spa-qty-control">
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,-1)">&#8722;</button>
+                                <span class="spa-qty-value">1</span>
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,1)">+</button>
+                            </div>
+                            <button class="spa-add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spa Card 2 -->
+                <div class="spa-card">
+                    <div class="spa-img-wrap">
+                        <img src="images/home page/2.jpg"
+                            alt="Anti-Hairfall Hair Mask">
+                        <div class="spa-sale-badge">
+                            <span class="spa-holi">HOLI</span>
+                            <span class="spa-sale-text">SALE</span>
+                        </div>
+                    </div>
+                    <div class="spa-card-info">
+                        <p class="spa-product-name">Naturali Anti-Hairfall Hair
+                            Mask With Rosemary, Korean Ginseng &amp; Biotin</p>
+                        <div class="spa-rating">
+                            <div class="spa-stars">
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="spa-rating-text">4.97 | 30
+                                reviews</span>
+                        </div>
+                        <div class="spa-price-row">
+                            <span class="spa-price-label">MRP:</span>
+                            <span class="spa-current-price">&#8377; 438</span>
+                            <span class="spa-old-price">&#8377;675</span>
+                            <span class="spa-discount-badge">35% OFF</span>
+                        </div>
+                        <div class="spa-volume-wrap">
+                            <select class="spa-volume-select">
+                                <option>200ML</option>
+                                <option>400ML</option>
+                            </select>
+                        </div>
+                        <div class="spa-cart-row">
+                            <div class="spa-qty-control">
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,-1)">&#8722;</button>
+                                <span class="spa-qty-value">1</span>
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,1)">+</button>
+                            </div>
+                            <button class="spa-add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spa Card 3 -->
+                <div class="spa-card">
+                    <div class="spa-img-wrap">
+                        <img src="images/home page/3.png"
+                            alt="Anti-Dandruff Scalp Serum">
+                        <div class="spa-sale-badge">
+                            <span class="spa-holi">HOLI</span>
+                            <span class="spa-sale-text">SALE</span>
+                        </div>
+                    </div>
+                    <div class="spa-card-info">
+                        <p class="spa-product-name">Naturali Anti-Dandruff Scalp
+                            Serum With Sage, Tea Tree Oil &amp; Salicylic
+                            Acid</p>
+                        <div class="spa-rating">
+                            <div class="spa-stars">
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="spa-rating-text">4.83 | 18
+                                reviews</span>
+                        </div>
+                        <div class="spa-price-row">
+                            <span class="spa-price-label">MRP:</span>
+                            <span class="spa-current-price">&#8377; 356</span>
+                            <span class="spa-old-price">&#8377;549</span>
+                            <span class="spa-discount-badge">35% OFF</span>
+                        </div>
+                        <div class="spa-volume-wrap">
+                            <select class="spa-volume-select">
+                                <option>50ML</option>
+                                <option>100ML</option>
+                            </select>
+                        </div>
+                        <div class="spa-cart-row">
+                            <div class="spa-qty-control">
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,-1)">&#8722;</button>
+                                <span class="spa-qty-value">1</span>
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,1)">+</button>
+                            </div>
+                            <button class="spa-add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spa Card 4 -->
+                <div class="spa-card">
+                    <div class="spa-img-wrap">
+                        <img src="images/home page/4.png"
+                            alt="Anti-Hairfall Scalp Serum">
+                        <div class="spa-sale-badge">
+                            <span class="spa-holi">HOLI</span>
+                            <span class="spa-sale-text">SALE</span>
+                        </div>
+                    </div>
+                    <div class="spa-card-info">
+                        <p class="spa-product-name">Naturali Anti-Hairfall Scalp
+                            Serum With Rosemary, Korean Ginseng &amp;
+                            Redensyl</p>
+                        <div class="spa-rating">
+                            <div class="spa-stars">
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="spa-rating-text">4.62 | 34
+                                reviews</span>
+                        </div>
+                        <div class="spa-price-row">
+                            <span class="spa-price-label">MRP:</span>
+                            <span class="spa-current-price">&#8377; 454</span>
+                            <span class="spa-old-price">&#8377;699</span>
+                            <span class="spa-discount-badge">35% OFF</span>
+                        </div>
+                        <div class="spa-volume-wrap">
+                            <select class="spa-volume-select">
+                                <option>30ML</option>
+                                <option>60ML</option>
+                            </select>
+                        </div>
+                        <div class="spa-cart-row">
+                            <div class="spa-qty-control">
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,-1)">&#8722;</button>
+                                <span class="spa-qty-value">1</span>
+                                <button class="spa-qty-btn"
+                                    onclick="spaChangeQty(this,1)">+</button>
+                            </div>
+                            <button class="spa-add-to-cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= BENEFITS SECTION ================= -->
+        <section class="benefits">
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Cruelty Free</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-flask"></i>
+                    <p>No Paraben</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-percent"></i>
+                    <p>No Mineral Oil</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fa-solid fa-vial"></i>
+                    <p>No Sulphate</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= TESTIMONIAL SECTION ================= -->
+        <section class="testimonials">
+            <h2 class="testimonial-title">Awesome Outcomes</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card active">
+                    <div class="stars">★★★★★</div>
+                    <h3>Men's Hairfall Control</h3>
+                    <p class="testimonial-text">
+                        "The Naturali Men's Shampoo is a good shampoo,
+                        good for oily hair and normal. Can be used daily.
+                        So far my hair fall has reduced after using 2 bottles,
+                        almost 4 months."
+                    </p>
+                    <p class="testimonial-author">Sumeer Shah</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PREMIUM FOOTER ================= -->
+        <footer class="premium-footer">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <h2 class="footer-logo">Naturali</h2>
+                    <hr class="footer-line">
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>SHOP</h4>
+                            <a href="#">Best Sellers</a>
+                            <a href="#">New Launches</a>
+                            <a href="#">Hair Care</a>
+                            <a href="#">Skin Care</a>
+                            <a href="#">Ingredients</a>
+                            <a href="#">Combos</a>
+                            <a href="#">Shop By Concern</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>BRAND</h4>
+                            <a href="#">About Us</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Refund policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                        <div class="footer-column">
+                            <h4>LEGAL</h4>
+                            <a href="#">Contact</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Return &amp; Refund Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-badge">
+                        <div class="badge-circle"><span>N</span></div>
+                    </div>
+                    <h3 class="newsletter-title">
+                        Elevate Your Self-Care Routine<br>
+                        With Natural Solutions.
+                    </h3>
+                    <div class="newsletter">
+                        <input type="email" placeholder="YOUR EMAIL">
+                        <button>SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-section">
+                    <h4>SOCIAL</h4>
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                </div>
+                <div class="copyright">
+                    COPYRIGHT &copy; 2026 NATURALI | ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </footer>
+
+        <!-- ================= SCROLL TO TOP ================= -->
+        <button id="scrollTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script src="js/home.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
